@@ -1,0 +1,1 @@
+Este projeto trabalha com checkBox, radioGroup e EditText.

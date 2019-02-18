@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextNomeProdutoId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do produto" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cores"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBrancoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branco" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVerdeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verde" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVermelhoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vermelho" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disponível em Estoque"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEstoqueId"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonSimId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sim" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNaoId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonEnviarId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btEnviar"
+            android:text="Enviar" />
+
+        <TextView
+            android:id="@+id/textResultadoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.FitWindowsLinearLayout>
